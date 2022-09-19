@@ -24,7 +24,31 @@
     </head>
 
     <body>
-
+        <div class="container-fluid">
+            <center>
+                <div id="displayTime"></div>
+                <div class="container count-cont col-lg-4 col-md-6 col-sm-12">
+                    <div class="countdown-container">
+                        <center>
+                            <div class="div-title">
+                                <h4>Countdown Timer ⏳</h4>
+                            </div>
+                            <input type="number" name="" id="userInputHr" class="rounded countdown-input" min="0"
+                                max="24" placeholder="Hr">
+                            <input type="number" name="" id="userInputMin" class="rounded countdown-input" min="0"
+                                max="60" placeholder="Min">
+                            <input type="number" name="" id="userInputSec" class="rounded countdown-input" min="0"
+                                max="60" required placeholder="Sec">
+                        </center>
+                        <div class="containerbtn">
+                            <center>
+                                <button onclick="countDown()" class="btn btn-lg btn-outline-dark ">Start</button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
     </body>
 
 </html>
