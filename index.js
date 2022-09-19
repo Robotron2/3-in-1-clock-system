@@ -60,3 +60,26 @@ const countDown = () => {
 const stopCountdownBeep = () => {
     beepForCountDown.pause();
 };
+
+// Stopwatch Section
+
+// Start Watch
+const startWatch = () => {
+    mywatchmillisec.value++;
+    timeout = setTimeout(startWatch, 10);
+    if (mywatchmillisec.value == 60) {
+        mywatchsec.value++;
+        mywatchmillisec.value = 0;
+    }
+    if (mywatchsec.value == 60) {
+        mywatchmin.value++;
+        mywatchsec.value = 0;
+        mywatchmillisec.value = 0;
+    }
+    if (mywatchmin.value == 60) {
+        mywatchhr.value++;
+        mywatchmin.value = 0;
+        mywatchsec.value = 0;
+        mywatchmillisec.value = 0;
+    }
+};
