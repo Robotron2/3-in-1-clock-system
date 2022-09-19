@@ -99,3 +99,43 @@ const resetWatch = () => {
     mywatchsec.value = "00";
     mywatchmillisec.value = "00";
 };
+
+//Alarm Section
+
+let mySound = new Audio("audio/Alarm.wav");
+
+const setAlarm = () => {
+    let alarmTime = new Date();
+    let alarmHour = alarmHr.value;
+    let alarmMinutes = alarmMin.value;
+    if (alarmHr.value == "" || alarmMin.value == "") {
+        document.getElementById("disp").innerHTML = `Fields cannot be empty`;
+        document.getElementById("disp").style.visibility = "visible";
+    } else {
+        document.getElementById("disp").innerHTML = `Alarm is set to ${alarmHour} : ${alarmMinutes}`;
+        document.getElementById("disp").style.visibility = "visible";
+        document.getElementById("alarmHr").style.visibility = "hidden";
+        document.getElementById("alarmMin").style.visibility = "hidden";
+    }
+
+    if (alarmHour == alarmTime.getHours() && alarmMinutes == alarmTime.getMinutes()) {
+        mySound.play();
+    } else {
+        setTimeout(setAlarm, 1000);
+    }
+};
+const stopAlarm = () => {
+    let alarmQuestion = Math.floor(Math.random() * 10000);
+    let alarmAnswer = prompt(`Prove that you are awake: Type this number(s):  ${alarmQuestion}`);
+    if (alarmAnswer == alarmQuestion) {
+        document.getElementById("disp").style.visibility = "hidden";
+        document.getElementById("alarmHr").style.visibility = "visible";
+        document.getElementById("alarmMin").style.visibility = "visible";
+        alarmHr.value = "";
+        alarmMin.value = "";
+        mySound.pause();
+    } else {
+        mySound.play();
+        setTimeout(3000);
+    }
+};
