@@ -83,3 +83,10 @@ const startWatch = () => {
         mywatchmillisec.value = 0;
     }
 };
+
+const isPaused = () => {
+    let timeCondition = false;
+    if (timeCondition == false) {
+        clearTimeout(timeout);
+    }
+};
