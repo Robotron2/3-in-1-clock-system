@@ -47,6 +47,32 @@
                         </div>
                     </div>
                 </div>
+                <!-- Stopwatch section -->
+                <div class="container stop-cont col-lg-4 col-md-6 col-sm-12">
+                    <div class="stopwatch-container">
+                        <center>
+                            <div class="div-title">
+                                <h4>Stopwatch ⏱</h4>
+                            </div>
+                            <input type="number" name="" id="mywatchhr" class="rounded" required placeholder="Hr"
+                                value="00">
+                            <input type="number" name="" id="mywatchmin" class="rounded" required placeholder="Min"
+                                value="00">
+                            <input type="number" name="" id="mywatchsec" class="rounded" required placeholder="Sec"
+                                value="00">
+                            <input type="number" name="" id="mywatchmillisec" class="rounded" required placeholder="ms"
+                                value="00">
+                        </center>
+                        <div class="containerbtn">
+                            <center>
+                                <button onclick="startWatch()" class="btn btn-lg btn-outline-dark ">Start</button>
+                                <button onclick="isPaused()" class="btn btn-lg btn-outline-dark ">Pause</button>
+                                <!-- <button class="btn btn-lg btn-outline-dark ">Play</button> -->
+                                <button onclick="resetWatch()" class="btn btn-lg btn-outline-dark ">Reset</button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
             </center>
         </div>
     </body>
