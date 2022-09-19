@@ -9,6 +9,7 @@ body{
 h4{
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+    color: #000;
 }
 .container-fluid{
     padding: 5%;
@@ -61,7 +62,7 @@ h4{
     font-size: 6vw;                   
     background-clip: text;
     /* color: #fff; */
-    color: #355568;
+    color: #000;
     animation: myTimemove 10s ;
 }
 
@@ -113,8 +114,8 @@ h4{
 }
 
 @keyframes myTimemove {
-    from{color: #fff; font-size: 3vw;}
-    to{color: #355568; font-size: 6vw;}
+    from{color: #EAF6F6; font-size: 3vw;}
+    to{color: #000; font-size: 6vw;}
 }
 
 
