@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-position: top left;
     animation: myBody 60s infinite;
+    opacity: 0.9;
 }
 
 h4{
