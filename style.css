@@ -1,8 +1,9 @@
 body{
     padding-bottom: 3%;
-    background-image: url("clock5.jpg");
+    background-image: url("clock.jpg");
     background-repeat: no-repeat;
     background-position: top left;
+    animation: myBody 60s infinite;
 }
 
 h4{
@@ -14,12 +15,12 @@ h4{
 }
 .container{
     padding: 5%;
-    border: 2px solid #355568;
+    border: 2px solid #CD9FDE;
     max-width: 450px;
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    background-color: #355568;
+    background-color: #CD9FDE;
 }
 .container:hover{
     padding: 5.1%;
@@ -38,6 +39,8 @@ h4{
     padding: 2%;
     max-width: 56px;
     font-family: 'Digital Numbers', sans-serif;
+    outline: none;
+    border: none;
     
 }
 #mywatchhr,
@@ -46,7 +49,72 @@ h4{
 #mywatchmillisec{
     font-family: 'Digital Numbers', sans-serif;
     max-width: 50px;
+    outline: none;
+    border: none;
 }
 .containerbtn{
     margin-top:2% ;
 }
+
+#displayTime{
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 6vw;                   
+    background-clip: text;
+    /* color: #fff; */
+    color: #355568;
+    animation: myTimemove 10s ;
+}
+
+/* Remember media query here */
+.count-cont, .stop-cont, .alarm-cont{
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    display: inline-block;
+      
+}
+.count-cont:hover, .stop-cont:hover, .alarm-cont:hover{
+    animation: mycontainers 10s infinite;
+}
+
+
+.countdown-container, .stopwatch-container, .alarm-container{
+    padding: 2%;
+    /* border: 2px solid; */
+    
+}
+.countdown-container:hover, .stop-cont :hover, .alarm-container:hover{
+    animation: mymove 5s infinite;
+}
+.btn{
+    background-color: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: whitesmoke;
+    color: purple;
+    border: none;
+    outline: none;
+    
+}
+
+
+@keyframes mycontainers {
+    50%{border-top-right-radius: 12%; border-bottom-left-radius: 12%; border-top-left-radius: 0%; border-bottom-right-radius: 0%;}
+}
+
+@keyframes mymove {
+    50% {box-shadow: 10px 10px 20px grey;} 
+}
+@keyframes myBody {
+    50% {background-position: center;}
+}
+
+@keyframes myTimemove {
+    from{color: #fff; font-size: 3vw;}
+    to{color: #355568; font-size: 6vw;}
+}
+
+
