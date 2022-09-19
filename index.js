@@ -90,3 +90,12 @@ const isPaused = () => {
         clearTimeout(timeout);
     }
 };
+
+//Reset watch
+const resetWatch = () => {
+    clearTimeout(timeout);
+    mywatchhr.value = "00";
+    mywatchmin.value = "00";
+    mywatchsec.value = "00";
+    mywatchmillisec.value = "00";
+};
