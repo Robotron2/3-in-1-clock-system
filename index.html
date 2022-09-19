@@ -73,6 +73,29 @@
                         </div>
                     </div>
                 </div>
+                <!-- Alarm Section -->
+                <div class="container alarm-cont col-lg-4 col-md-6 col-sm-12">
+                    <div class="alarm-container">
+                        <center>
+                            <div class="div-title">
+                                <h4>Alarm ⏰</h4>
+                            </div>
+                            <center><small id="disp" style="color: red; visibility: none;"></small></center>
+                            <input type="number" name="" id="alarmHr" class="alarmInput rounded" min="0" max="24"
+                                required placeholder="Hr">
+                            <input type="number" name="" id="alarmMin" class="alarmInput rounded" min="0" max="60"
+                                required placeholder="Min">
+                            <!-- <input type="number" name="" id="alarmSec" class="rounded" min="0" max="60" required
+                                                placeholder="Sec"> -->
+                        </center>
+                        <div class="containerbtn">
+                            <center>
+                                <button onclick="setAlarm()" class="btn btn-lg btn-outline-dark ">Set </button>
+                                <button onclick="stopAlarm()" class="btn btn-lg btn-outline-dark ">Stop </button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
             </center>
         </div>
     </body>
