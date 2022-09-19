@@ -1,0 +1,52 @@
+body{
+    padding-bottom: 3%;
+    background-image: url("clock5.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.container-fluid{
+    padding: 5%;
+}
+.container{
+    padding: 5%;
+    border: 2px solid #355568;
+    max-width: 450px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #355568;
+}
+.container:hover{
+    padding: 5.1%;
+    
+}
+
+
+.div-title{
+    color: #10171f;
+    margin-top: -1% !important;
+}
+.countdown-input,
+#alarmHr, 
+#alarmMin, 
+#alarmSec{
+    padding: 2%;
+    max-width: 56px;
+    font-family: 'Digital Numbers', sans-serif;
+    
+}
+#mywatchhr,
+#mywatchmin,
+#mywatchsec,
+#mywatchmillisec{
+    font-family: 'Digital Numbers', sans-serif;
+    max-width: 50px;
+}
+.containerbtn{
+    margin-top:2% ;
+}
